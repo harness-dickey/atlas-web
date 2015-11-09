@@ -77,6 +77,16 @@
       z-index: 1;
     }
     body { background-color: #DDD; }
+
+    #treaties {
+      border: 1px solid #ccc;
+      background-color: #eee;
+      z-index: 1000;
+      position: absolute;
+      padding-right: 1em;
+      top: 1em;
+      left: 1em;
+    }
     </style>
 
   </head>
@@ -116,6 +126,17 @@
 
     <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1.1','packages':['geochart']}]}"></script>
        <div id="regions_div" style="width: 100%; height: 100%;"></div>
+
+       <div id="treaties">
+         <ul>
+           <li><a href="#madrid_agreement">Madrid Agreement</a></li>
+           <li><a href="#madrid_protocol">Madrid Protocol</a></li>
+           <li><a href="#coummunity_trademark">Community Trademark</a></li>
+           <li><a href="#epc">EPC Countries</a></li>
+           <li><a href="#pct">PCT Countries</a></li>
+           <li><a href="#parid">Paris Convention</a></li>
+         </ul>
+       </div>
 
        <script>
        google.setOnLoadCallback(drawRegionsMap);
