@@ -92,13 +92,52 @@
   </head>
   <body>
 
+    <script>
+
+      var treaties = {
+        "madrid_agreement":[ ['Country', 'Popularity'],
+          ['CA', 100],
+          ['US', 100],
+          ['BR', 100],
+          ['FR', 100],
+          ['RU', 100]
+        ],
+        "madrid_protocol":[ ['Country', 'Popularity'],
+          ['TZ', 100],
+          ['UY', 100],
+          ['BA', 100],
+          ['EC', 100],
+        ],
+        "coummunity_trademark":[ ['Country', 'Popularity'],
+          ['US', 100],
+        ],
+        "epc":[ ['Country', 'Popularity'],
+          ['AU', 100],
+          ['AT', 100],
+          ['CF', 100],
+          ['MX', 100],
+          ['FI', 100]
+        ],
+        "pct":[ ['Country', 'Popularity'],
+          ['HK', 100],
+          ['NZ', 100],
+          ['NO', 100],
+          ['ZA', 100],
+        ],
+        "paris":[ ['Country', 'Popularity'],
+          ['FR', 100],
+        ],
+
+      };
+</script>
+
     <script type="text/javascript">
     // https://gist.github.com/randylien/5683851
 
     (function($,sr){
 
   // debouncing function from John Hann
-  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+  // http://unscriptable.com/index.php/1009/03/20/debouncing-javascript-methods/
   var debounce = function (func, threshold, execAsap) {
       var timeout;
 
@@ -134,24 +173,35 @@
            <li><a href="#coummunity_trademark">Community Trademark</a></li>
            <li><a href="#epc">EPC Countries</a></li>
            <li><a href="#pct">PCT Countries</a></li>
-           <li><a href="#parid">Paris Convention</a></li>
+           <li><a href="#paris">Paris Convention</a></li>
          </ul>
        </div>
 
        <script>
-       google.setOnLoadCallback(drawRegionsMap);
 
-  function drawRegionsMap() {
+      //  google.setOnLoadCallback(drawRegionsMap("madrid_agreement"));
+       google.setOnLoadCallback(function() { location.hash="#madrid_agreement"});
 
-    var data = google.visualization.arrayToDataTable([
-      ['Country', 'Popularity'],
-      ['Germany', 200],
-      ['United States', 200],
-      ['Brazil', 200],
-      ['Canada', 200],
-      ['France', 200],
-      ['RU', 200]
-    ]);
+  function drawRegionsMap(name) {
+
+    key = name || "madrid_agreement"
+
+    console.log('foo');
+    console.log(key);
+    key = key.replace("#","")
+    console.log(treaties[key]);
+
+    var data = google.visualization.arrayToDataTable(treaties[key]);
+
+    // var data = google.visualization.arrayToDataTable([
+    //   ['Country'],
+    //   ['Germany'],
+    //   ['United States'],
+    //   ['Brazil'],
+    //   ['Canada'],
+    //   ['France'],
+    //   ['RU']
+    // ]);
 
     //var options = {};
 
@@ -176,6 +226,18 @@
     });
 
   }
+
+
+
+  </script>
+
+  <script>
+
+  function hashselect() {
+      // alert("clicked...."+location.hash );
+      drawRegionsMap(location.hash);
+  }
+  window.addEventListener("hashchange", hashselect, false);
   </script>
 
   </body>
