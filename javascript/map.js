@@ -1,29 +1,30 @@
 
-      //  google.setOnLoadCallback(drawRegionsMap("madrid_agreement"));
-       google.setOnLoadCallback(function() { location.hash="#madrid_agreement"});
+      // google.setOnLoadCallback(drawRegionsMap(location.hash));
+      google.setOnLoadCallback(function() {
+        // if (location.hash) {
+          drawRegionsMap(location.hash);
+        // } else {
+          // location.hash="#madrid_agreement";
+        // }
+      });
 
   function drawRegionsMap(name) {
 
-    key = name || "madrid_agreement"
+    if (name) {
+      name = name.replace("#","");
+    }
 
-    console.log('foo');
+    var key = name
+    if(!treaties.hasOwnProperty(key)) {
+      key = "madrid_agreement";
+      location.hash="#madrid_agreement";
+    }
+
     console.log(key);
     key = key.replace("#","")
     console.log(treaties[key].countries.length);
 
     var data = google.visualization.arrayToDataTable(treaties[key].countries);
-
-    // var data = google.visualization.arrayToDataTable([
-    //   ['Country'],
-    //   ['Germany'],
-    //   ['United States'],
-    //   ['Brazil'],
-    //   ['Canada'],
-    //   ['France'],
-    //   ['RU']
-    // ]);
-
-    //var options = {};
 
     var options = {
      // region: '002', // Africa
