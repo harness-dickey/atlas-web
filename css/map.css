@@ -35,6 +35,16 @@
   opacity: 0.8;
 }
 
+#description {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  z-index: 1000;
+  position: absolute;
+  padding: 0.5em;
+  bottom: 1em;
+  left: 1em;
+  opacity: 0.8;
+
 ul { list-style-type: none; margin-left: 1em;padding:0;}
 ul li { list-style-type: none; margin-left: 1em;padding:0;}
 
