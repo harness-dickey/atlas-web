@@ -43,32 +43,14 @@
       legend:'none',
     };
 
-    console.log(treaties[key].description);
     $('#description').text(treaties[key].description);
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
-    // chart.draw(data, options);
-
-    function drawChart() {
-  // Disabling the button while the chart is drawing.
-  // button.disabled = true;
-  // google.visualization.events.addListener(chart, 'ready',
-  //     function() {
-  //       button.disabled = false;
-  //       button.value = 'Switch to ' + (current ? 'Tea' : 'Coffee');
-  //     });
-  // options['title'] = 'Monthly ' + (current ? 'Coffee' : 'Tea') + ' Production by Country';
-
-  // chart.draw(data[current], options);
-  chart.draw(data, options);
-}
-drawChart();
-
+    chart.draw(data, options);
 
     $(window).smartresize(function () {
-      // chart.draw(data, options);
-      drawChart();
+      chart.draw(data, options);
     });
 
   }
