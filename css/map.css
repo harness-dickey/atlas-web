@@ -63,9 +63,9 @@ section.banner.angle-white { display:none !important;}
   font-size:14pt;
 }
 #atlas #description .title { font-weight: 400; color:#69ABD4 !important;}
-#atlas #description .body { font-weight: 100; !important;}
+#atlas #description .body { font-weight: 100;}
 
-#atlas #treaties { padding-left: 1em; }
+#atlas #treaties { padding-left: 1em; font-weight: 400;}
 #atlas #treaties #treaty_nav { display:list-item; }
 
 #atlas a { text-decoration: none; color: #444;}
