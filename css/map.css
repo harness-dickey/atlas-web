@@ -4,6 +4,7 @@ body {
 #atlas {
   position: relative;
 }
+section.banner.angle-white { display:none !important;}
 /*#panel {
   position: absolute;
   top: 10px;
