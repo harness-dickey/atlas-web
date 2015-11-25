@@ -55,7 +55,7 @@ section.banner.angle-white { display:none !important;}
   z-index: 1000;
   position: absolute;
   padding: 0.5em;
-  bottom: 1em;
+  bottom: -2em;
   left: 1em;
   opacity: 0.8;
   font-size:14pt;
