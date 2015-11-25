@@ -47,8 +47,8 @@
   opacity: 0.8;
 }
 
-#atlas #treaties ul { list-style-type: none; margin-left: 1em;padding:0;}
-#atlas #treaties ul li { list-style-type: none; margin-left: 1em;padding:0;}
+#atlas #treaties ul { list-style-type: none !important; margin-left: 1em;padding:0;}
+#atlas #treaties ul li { list-style-type: none !important; margin-left: 1em;padding:0;}
 
 #atlas a { text-decoration: none; color: #444;}
 #atlas a.active { color:#69ABD4 !important;}
