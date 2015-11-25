@@ -66,7 +66,7 @@ section.banner.angle-white { display:none !important;}
 #atlas #description .body { font-weight: 100;}
 #atlas #description .social { position: absolute; top: 7px;right:5px;  }
 #atlas #description .social div { display: inline-block; }
-#atlas #description .social a { background-color: #509DCD; color: #fff; padding: 3px; font-weight: 100; font-size: 12pt; font-variant: small-caps; }
+#atlas #description .social a { background-color: #509DCD; color: #fff; padding: 3px; font-weight: 300; font-size: 12pt; font-variant: small-caps; }
 #atlas #description .social a:hover { background-color: #69ABD4; }
 
 #atlas #treaties { padding-left: 1em; font-weight: 400; font-size:12pt;padding-top: 10px;}
