@@ -40,7 +40,7 @@ section.banner.angle-white { display:none !important;}
 #atlas #treaties {
   border: 1px solid #ccc;
   background-color: #eee;
-  z-index: 1000;
+  /*z-index: 1;*/
   position: absolute;
   padding-right: 0.5em;
   top: 1em;
@@ -52,7 +52,7 @@ section.banner.angle-white { display:none !important;}
 #atlas #description {
   border: 1px solid #ccc;
   background-color: #eee;
-  z-index: 1000;
+  /*z-index: 1;*/
   position: absolute;
   padding: 0.5em;
   bottom: -2em;
