@@ -24,6 +24,8 @@
     key = key.replace("#","")
     console.log(treaties[key].countries.length);
 
+    activate_link(key);
+
     var data = google.visualization.arrayToDataTable(treaties[key].countries);
 
     var options = {
@@ -71,4 +73,10 @@ drawChart();
       drawChart();
     });
 
+  }
+
+  function activate_link(key) {
+    console.log("activate link: "+key);
+    $("#atlas #treaties a").removeClass('active');
+    $("#atlas a#"+key).addClass('active');
   }

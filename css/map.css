@@ -1,7 +1,7 @@
 #atlas {
   position: relative;
 }
-#panel {
+/*#panel {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -11,12 +11,10 @@
   opacity: .9;
   padding: 5px;
   border: 1px solid #999;
-}
-#message {
+}*/
+/*#message {
   opacity: 0.99;
   position:absolute;
-  /*top: 10px;*/
-  /*left: 10px;*/
   top:100%;
   border: 1px solid #eee;
   background-color: #fff;
@@ -24,10 +22,10 @@
   text-align: center;
   margin:0;
   z-index: 1;
-}
+}*/
 
 
-#treaties {
+#atlas #treaties {
   border: 1px solid #ccc;
   background-color: #eee;
   z-index: 1000;
@@ -38,7 +36,7 @@
   opacity: 0.8;
 }
 
-#description {
+#atlas #description {
   border: 1px solid #ccc;
   background-color: #eee;
   z-index: 1000;
@@ -47,9 +45,10 @@
   bottom: 1em;
   left: 1em;
   opacity: 0.8;
+}
 
-#treaties ul { list-style-type: none; margin-left: 1em;padding:0;}
-#treaties ul li { list-style-type: none; margin-left: 1em;padding:0;}
+#atlas #treaties ul { list-style-type: none; margin-left: 1em;padding:0;}
+#atlas #treaties ul li { list-style-type: none; margin-left: 1em;padding:0;}
 
-a { text-decoration: none; color: #444;}
-a.active {color:"#69ABD4" !important;}
+#atlas a { text-decoration: none; color: #444;}
+#atlas a.active { color:#69ABD4 !important;}
