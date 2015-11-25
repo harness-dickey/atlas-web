@@ -64,6 +64,8 @@ section.banner.angle-white { display:none !important;}
 #atlas #treaties ul { list-style-type: none; list-style: none; list-style-image: none; margin-left: 1em;padding:0;}
 #atlas #treaties ul li.treaty_nav { list-style-type: none; list-style: none; list-style-image: none; margin-left: 0;padding:0;}
 #atlas #treaties .treaty_nav { list-style-type: none; list-style: none; list-style-image: none; margin-left: 0;padding:0;}
+.wysiwyg ul { margin-left: 0; list-style: none; margin-top: 0; }
+ul { margin-left: 0; list-style: none; margin-top: 0; }
 
 #atlas a { text-decoration: none; color: #444;}
 #atlas a.active { color:#69ABD4 !important;}
