@@ -1,10 +1,14 @@
 body {
     background: linear-gradient(45deg, rgba(102,153,204,0.3) 0%,rgba(0,0,0,.1) 33%, rgba(0,0,0,.1) 66%,rgba(102,153,204,0.3) 100%) !important;
 }
+div.wrap,
+article.main,
 #atlas {
-  position: relative;
   width: 100% !important;
   height: 100% !important;
+}
+#atlas {
+  position: relative;
 }
 section.banner.angle-white { display:none !important;}
 /*#panel {
