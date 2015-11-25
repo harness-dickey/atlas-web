@@ -1,3 +1,6 @@
+body {
+    background: linear-gradient(45deg, rgba(102,153,204,0.5) 0%,rgba(0,0,0,0) 50%,rgba(102,153,204,0.5) 100%) !important;
+}
 #atlas {
   position: relative;
 }
@@ -34,6 +37,7 @@
   top: 1em;
   left: 1em;
   opacity: 0.8;
+  font-size:14pt;
 }
 
 #atlas #description {
@@ -45,7 +49,7 @@
   bottom: 1em;
   left: 1em;
   opacity: 0.8;
-  font-size:1.5em;
+  font-size:14pt;
 }
 
 #atlas #treaties ul { list-style-type: none !important; margin-left: 1em;padding:0;}
