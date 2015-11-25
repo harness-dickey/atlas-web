@@ -8,6 +8,7 @@ article.main,
   height: 100% !important;
 }
 #atlas {
+  margin: 0 auto;
   position: relative;
 }
 section.banner.angle-white { display:none !important;}
