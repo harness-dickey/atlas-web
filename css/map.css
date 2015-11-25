@@ -11,6 +11,7 @@ article.main { padding: 0 !important;}
 #atlas {
   margin: 0 auto;
   position: relative;
+  font-family: "Raleway","Helvetica Nueue",Helvetica,Arial,sans-serif;
 }
 section.banner.angle-white { display:none !important;}
 /*#panel {
@@ -46,7 +47,8 @@ section.banner.angle-white { display:none !important;}
   top: 1em;
   left: 1em;
   opacity: 0.8;
-  font-size:14pt;
+  font-size:12pt;
+  font-weight:100;
 }
 
 #atlas #description {
@@ -55,15 +57,16 @@ section.banner.angle-white { display:none !important;}
   /*z-index: 1;*/
   position: absolute;
   padding: 0.5em;
-  bottom: -2em;
+  bottom: 0;
   left: 1em;
   opacity: 0.8;
   font-size:14pt;
 }
+#atlas #description .title { font-weight: 400; color:#69ABD4 !important;}
+#atlas #description .body { font-weight: 100; !important;}
 
-#atlas #treaties ul { list-style-type: none; list-style: none; list-style-image: none; margin-left: 1em;padding:0;}
-#atlas #treaties ul li.treaty_nav { list-style-type: none; list-style: none; list-style-image: none; margin-left: 0;padding:0;}
-#atlas #treaties .treaty_nav { list-style-type: none; list-style: none; list-style-image: none; margin-left: 0;padding:0;}
+#atlas #treaties { padding-left: 1em; }
+#atlas #treaties #treaty_nav { display:list-item; }
 
 #atlas a { text-decoration: none; color: #444;}
 #atlas a.active { color:#69ABD4 !important;}
