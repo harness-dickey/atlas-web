@@ -62,7 +62,7 @@ section.banner.angle-white { display:none !important;}
 }
 
 #atlas #treaties ul { list-style: none !important; list-style-image: none !important; margin-left: 1em;padding:0;}
-#atlas #treaties ul li { list-style: none !important; list-style-image: none !important; margin-left: 1em;padding:0;}
+#atlas #treaties ul li { display: block !important; list-style: none !important; list-style-image: none !important; margin-left: 1em;padding:0;}
 
 #atlas a { text-decoration: none; color: #444;}
 #atlas a.active { color:#69ABD4 !important;}
