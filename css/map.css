@@ -3,6 +3,8 @@ body {
 }
 #atlas {
   position: relative;
+  width: 100% !important;
+  height: 100% !important;
 }
 section.banner.angle-white { display:none !important;}
 /*#panel {
