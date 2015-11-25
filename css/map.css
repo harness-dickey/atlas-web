@@ -11,7 +11,7 @@ article.main { padding: 0 !important;}
 #atlas {
   margin: 0 auto;
   position: relative;
-  font-family: "Raleway","Helvetica Nueue",Helvetica,Arial,sans-serif;
+  /*font-family: "Raleway","Helvetica Nueue",Helvetica,Arial,sans-serif;*/
 }
 section.banner.angle-white { display:none !important;}
 /*#panel {
