@@ -3,7 +3,7 @@ $(window).load(function() {
 
   $.each(treaties, function( index, element ) {
     console.log("creating menu item: "+element.key+", name: "+element.name)
-      var li = $(document.createElement("p"));
+      var li = $(document.createElement("div"));
       li.addClass("treaty_nav");
       menu.append(li);
       var link = $(document.createElement("a"));
