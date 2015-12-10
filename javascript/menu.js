@@ -15,3 +15,8 @@ $(window).load(function() {
   });
 
 });
+
+
+$(function() {
+  $('ul.accordion').accordion();
+});
