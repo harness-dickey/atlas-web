@@ -10,6 +10,10 @@
 
   function drawRegionsMap(name) {
 
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 1);
+
     if (name) {
       name = name.replace("#","");
     }
