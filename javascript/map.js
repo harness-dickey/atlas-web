@@ -36,7 +36,7 @@
       // markerOpacity: '0.5',
       // backgroundColor.fill: 'blue',
       //datalessRegionColor: '#f8bbd0',
-      // animation: {"startup": true},
+      animation: {"startup": true},
       animation:{
        duration: 1000,
        easing: 'out',
