@@ -1,9 +1,0 @@
-.accordion { list-style-type: none; padding: 0; margin: 0 0 30px; border: 1px solid #ccc; border-top: none; border-left: none; }
-.accordion ul { padding: 0; margin: 0; float: left; display: block; width: 100%; }
-.accordion li {  cursor: pointer; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;}
-/*.accordion li.active>a { background: url('close.gif') no-repeat center right; }*/
-.accordion li div { padding: 20px;  display: block; clear: both; float: left;}
-.accordion a { text-decoration: none; border-bottom: 1px solid #ddd; font-weight: bold; color: #222; padding: 0 10px; display: block; cursor: pointer; }
-
-/* Level 2 */
-.accordion li ul li {  font-size: 0.9em; }
