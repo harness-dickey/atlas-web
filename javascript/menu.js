@@ -61,6 +61,4 @@ $(function() {
   create_sections(acc);
 
   $('ul.accordion').accordion();
-// }, 1000);
-  // $('a[href=#trademarks]').trigger('activate-node');
 });
