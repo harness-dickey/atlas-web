@@ -7,7 +7,7 @@ function create_sections(acc) {
       var section_link = $(document.createElement("a"));
       section.append(section_link);
       section.addClass("section");
-      section_link.attr("href","#"+group.key);
+      section_link.attr("id",""+group.key);
       // link.attr("id",element.key);
       section_link.html(group.name);
 

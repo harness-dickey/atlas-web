@@ -70,5 +70,5 @@
     console.log("activate link: "+key);
     $("#atlas #treaties a").removeClass('active');
     $("#atlas a#"+key).addClass('active');
-    // $('a[href=#'+ $treaties[key].groups[0] + ']').trigger('activate-node');
+    $('#atlas a#'+ $treaties[key].groups[0]).trigger('activate-node');
   }
