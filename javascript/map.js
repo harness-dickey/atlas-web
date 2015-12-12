@@ -19,18 +19,18 @@
     }
 
     var key = name
-    if(!treaties.hasOwnProperty(key)) {
+    if(!$treaties.hasOwnProperty(key)) {
       key = "madrid_agreement";
       location.hash="#madrid_agreement";
     }
 
     console.log(key);
     key = key.replace("#","")
-    console.log(treaties[key].countries.length);
+    console.log($treaties[key].countries.length);
 
     activate_link(key);
 
-    var data = google.visualization.arrayToDataTable(treaties[key].countries);
+    var data = google.visualization.arrayToDataTable($treaties[key].countries);
 
     var options = {
      // region: '002', // Africa
@@ -49,7 +49,7 @@
       legend:'none',
     };
 
-    generate_description(treaties[key]);
+    generate_description($treaties[key]);
 
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
@@ -70,4 +70,5 @@
     console.log("activate link: "+key);
     $("#atlas #treaties a").removeClass('active');
     $("#atlas a#"+key).addClass('active');
+    // $('a[href=#'+ $treaties[key].groups[0] + ']').trigger('activate-node');
   }
