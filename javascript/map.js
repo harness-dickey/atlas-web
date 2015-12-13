@@ -33,13 +33,8 @@
     var data = google.visualization.arrayToDataTable($treaties[key].countries);
 
     var options = {
-     // region: '002', // Africa
       colorAxis: {colors: ['#69ABD4']},
-      // backgroundColor: '#81d4fa',
       backgroundColor: { fill:'transparent', stroke:"#333" },
-      // markerOpacity: '0.5',
-      // backgroundColor.fill: 'blue',
-      //datalessRegionColor: '#f8bbd0',
       animation: {"startup": true},
       animation:{
        duration: 1000,
@@ -62,8 +57,30 @@
   }
 
   function generate_description(treaty) {
-    $('#description .title').text(treaty.name);
-    $('#description .body').text(treaty.description);
+    $('#atlas #description .title').text(treaty.name);
+    $('#atlas #description .body').text(treaty.description);
+    var div = $('#description #export');
+    var inc_ul = $('#atlas #description #export #included ul');
+    var ex_ul = $('#atlas #description #export #excluded ul');
+    // $('#atlas #description #export #included').append(inc_ul);
+    // $('#atlas #description #export #excluded').append(ex_ul);
+    inc_ul.empty();
+    ex_ul.empty();
+
+    $.each(treaty.included, function(index, key) {
+      var li = $(document.createElement("li"));
+      inc_ul.append(li);
+      li.html($countries[key].name);
+    });
+
+    $.each(treaty.excluded, function(index, key) {
+      var li = $(document.createElement("li"));
+      ex_ul.append(li);
+      li.html($countries[key].name);
+    });
+
+
+
   }
 
   function activate_link(key) {

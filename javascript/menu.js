@@ -51,7 +51,7 @@ function is_elem_in_group(elem, type) {
 }
 
 
-$(function() {
+$(document).ready(function() {
   var menu = $("#atlas #treaties");
 
   var acc = $(document.createElement("ul"));
@@ -60,5 +60,12 @@ $(function() {
 
   create_sections(acc);
 
+});
+
+$(window).load(function() {
   $('ul.accordion').accordion();
+
+  $("#atlas #description #export_button").click(function() {
+    $("#atlas #description #export").toggle();
+  });
 });
