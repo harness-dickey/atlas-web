@@ -13,7 +13,7 @@ function create_sections(acc) {
 
       var ul = $(document.createElement("ul"));
       section.append(ul);
-      ul.css("list-style-type","none");
+      ul.attr("style","list-style-type:none;");
 
       var has_links = new Boolean(false);
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
   var acc = $(document.createElement("ul"));
   acc.addClass("accordion");
-  acc.css("list-style-type","none");
+  acc.attr("style", "list-style-type:none;");
   menu.append(acc);
 
   create_sections(acc);
