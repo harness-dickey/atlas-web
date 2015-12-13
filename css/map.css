@@ -93,8 +93,8 @@ section.banner.angle-white { display:none !important;}
 #atlas a.active, #atlas #treaties a.active { color:#69ABD4 !important; text-decoration: none; font-weight: 500; border:none; border-left:none;border-right:none;border-top:none;}
 #atlas a:focus {outline:0;}
 
-.main #atlas ul, .wysiwyg #atlas ul, .generic-wysiwyg #atlas ul {list-style: none;list-style-type: none;}
-.main #atlas li, .wysiwyg #atlas li, .generic-wysiwyg #atlas li {list-style: none;list-style-type: none;}
+.main #atlas #treaties ul.accordion, .wysiwyg #atlas #treaties ul.accordion {list-style-type: none;}
+.main #atlas #treaties ul.accordion li, .wysiwyg #atlas #treaties ul.accordion li {list-style-type: none;}
 
 /* ========================= */
 /*    ACCORDION   */
