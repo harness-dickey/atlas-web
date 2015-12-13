@@ -1,12 +1,12 @@
 
-      // google.setOnLoadCallback(drawRegionsMap(location.hash));
-      google.setOnLoadCallback(function() {
-        // if (location.hash) {
-          drawRegionsMap(location.hash);
-        // } else {
-          // location.hash="#madrid_agreement";
-        // }
-      });
+  // google.setOnLoadCallback(drawRegionsMap(location.hash));
+  google.setOnLoadCallback(function() {
+    // if (location.hash) {
+      drawRegionsMap(location.hash);
+    // } else {
+      // location.hash="#madrid_agreement";
+    // }
+  });
 
   function drawRegionsMap(name) {
 
@@ -54,10 +54,6 @@
       chart.draw(data, options);
     });
 
-    $(window).load(function() {
-      $('#atlas ul.accordion').accordion();
-    });
-
   }
 
   function generate_description(treaty) {
@@ -82,8 +78,6 @@
       ex_ul.append(li);
       li.html($countries[key].name);
     });
-
-
 
   }
 
