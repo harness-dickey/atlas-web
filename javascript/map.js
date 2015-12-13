@@ -54,6 +54,10 @@
       chart.draw(data, options);
     });
 
+    $(window).load(function() {
+      $('#atlas ul.accordion').accordion();
+    });
+
   }
 
   function generate_description(treaty) {

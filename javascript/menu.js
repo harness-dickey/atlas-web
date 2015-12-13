@@ -63,7 +63,7 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
-  $('ul.accordion').accordion();
+  $('#atlas ul.accordion').accordion();
 
   $("#atlas #description #export_button").click(function() {
     $("#atlas #description #export").toggle();
