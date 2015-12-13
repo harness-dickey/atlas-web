@@ -93,19 +93,22 @@ section.banner.angle-white { display:none !important;}
 #atlas a.active, #atlas #treaties a.active { color:#69ABD4 !important; text-decoration: none; font-weight: 500; border:none; border-left:none;border-right:none;border-top:none;}
 #atlas a:focus {outline:0;}
 
+ul {list-style-type: none;}
+li {list-style-type: none;}
+
 /* ========================= */
 /*    ACCORDION   */
 /* ========================= */
 /*.accordion { list-style-type: none; padding: 0; margin: 0 0 30px; border: 1px solid #ccc; border-top: none; border-left: none; }*/
-.accordion { list-style-type: none; padding: 2px; margin: 5px; border-top: none; border-left: none; }
-.accordion ul { padding: 0; margin: 0; float: left; display: block; width: 100%; }
+#atlas .accordion { list-style-type: none; padding: 2px; margin: 5px; border-top: none; border-left: none; }
+#atlas .accordion ul { list-style-type:none; padding: 0; margin: 0; float: left; display: block; width: 100%; }
 /*.accordion li {  cursor: pointer; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;}*/
 /*.accordion li {  background-color:#eee; cursor: pointer; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;}*/
-.accordion li {  background-color:#eee; cursor: pointer; list-style-type: none; padding: 2px 0 2px 0; margin: 0; float: left; display: block; width: 100%;}
-.accordion li.section { border-bottom:1px solid #ddd; }
+#atlas .accordion li {  background-color:#eee; cursor: pointer; list-style-type: none; padding: 2px 0 2px 0; margin: 0; float: left; display: block; width: 100%;}
+#atlas .accordion li.section { border-bottom:1px solid #ddd; }
 /*.accordion li.active>a { background: url('close.gif') no-repeat center right; }*/
-.accordion li div { padding: 20px;  display: block; clear: both; float: left;}
+#atlas .accordion li div { padding: 20px;  display: block; clear: both; float: left;}
 /*.accordion a { text-decoration: none; border-bottom: 1px solid #ddd; font-weight: bold; color: #222; padding: 0 10px; display: block; cursor: pointer; }*/
 
 /* Level 2 */
-.accordion li ul li { background-color:#fff; font-size: 0.9em; }
+#atlas .accordion li ul li { background-color:#fff; font-size: 0.9em; }
