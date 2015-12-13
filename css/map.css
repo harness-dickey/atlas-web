@@ -73,7 +73,7 @@ section.banner.angle-white { display:none !important;}
   /*width: 98%;*/
   overflow-x:auto;
   overflow-y:scroll;
-  max-height: 98%;
+  max-height: 90%;
 }
 #atlas #description .title { font-weight: 400; color:#6699CC !important;}
 #atlas #description .body { font-weight: 100;}
