@@ -96,7 +96,7 @@ section.banner.angle-white { display:none !important;}
 .main #atlas #treaties ul.accordion, .wysiwyg #atlas #treaties ul.accordion {list-style-type: none;}
 .main #atlas #treaties ul.accordion li, .wysiwyg #atlas #treaties ul.accordion li {list-style-type: none;}
 
-.wysiwyg #treaties ol li:before, .wysiwyg #treaties ul li:before { display:none; }
+.wysiwyg #atlas #treaties li:before, .wysiwyg #atlas #treaties li:before { display:none; content:""; }
 
 /* ========================= */
 /*    ACCORDION   */
