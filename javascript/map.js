@@ -40,7 +40,7 @@
     console.log("region = "+region);
 
     var options = {
-      colorAxis: {colors: ['#69ABD4']},
+      colorAxis: {colors: ['#E09600','#69ABD4']},
       backgroundColor: { fill:'transparent', stroke:"#333" },
       animation: {"startup": true},
       animation:{
@@ -50,6 +50,8 @@
      region: region,
     //  magnifyingGlass: {enable: true, zoomFactor: 3},
       defaultColor: '#bdc3c7',
+      datalessRegionColor: '#E09600',
+      // defaultColor: '#E09600',
       legend:'none',
     };
 
