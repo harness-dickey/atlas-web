@@ -62,7 +62,8 @@
     google.visualization.events.addListener(chart, 'regionClick', regionHandler);
 
     function regionHandler(e) {
-      alert('The user is navigating to page ' + e['region']);
+      console.log('country clicked' + e['region']);
+      window.location = "?region="+e['region']+location.hash
     }
 
     $(window).smartresize(function () {

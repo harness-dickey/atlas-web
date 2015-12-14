@@ -11,32 +11,8 @@ article.main { padding: 0 !important;}
 #atlas {
   margin: 0 auto;
   position: relative !important;
-  /*font-family: "Raleway","Helvetica Nueue",Helvetica,Arial,sans-serif;*/
 }
 section.banner.angle-white { display:none !important;}
-/*#panel {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  margin-left: -150px;
-  z-index: 5;
-  background-color: #fff;
-  opacity: .9;
-  padding: 5px;
-  border: 1px solid #999;
-}*/
-/*#message {
-  opacity: 0.99;
-  position:absolute;
-  top:100%;
-  border: 1px solid #eee;
-  background-color: #fff;
-  padding: 1em 0 1em 0;
-  text-align: center;
-  margin:0;
-  z-index: 1;
-}*/
-
 
 #atlas #treaties {
   /*border: 1px solid #ccc;*/
@@ -109,8 +85,8 @@ section.banner.angle-white { display:none !important;}
 #atlas .accordion ul { list-style:none; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;background-color: #fff;}
 /*.accordion li {  cursor: pointer; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;}*/
 /*.accordion li {  background-color:#eee; cursor: pointer; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;}*/
-#atlas .accordion li {  background-color:rgba(255, 255, 255, 0); cursor: pointer; list-style:none; list-style-type: none; padding: 5px; margin: 0; float: left; display: block; width: 100%;}
-#atlas .accordion li.section { border-bottom:1px solid #ccc; background-color: #f5f5f5; }
+#atlas .accordion li {  cursor: pointer; list-style:none; list-style-type: none; padding: 5px; margin: 0; float: left; display: block; width: 100%;}
+#atlas .accordion li.section { border-bottom:1px solid #ccc; background-color: #eeeeee; }
 /*.accordion li.active>a { background: url('close.gif') no-repeat center right; }*/
 #atlas .accordion li div { padding: 20px;  display: block; clear: both; float: left;}
 /*.accordion a { text-decoration: none; border-bottom: 1px solid #ddd; font-weight: bold; color: #222; padding: 0 10px; display: block; cursor: pointer; }*/
