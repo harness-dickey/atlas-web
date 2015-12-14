@@ -58,8 +58,8 @@ section.banner.angle-white { display:none !important;}
 #atlas #description .social a { background-color: #509DCD; color: #fff; padding: 3px; font-weight: 300; font-size: 12pt; font-variant: small-caps; }
 #atlas #description .social a:hover { background-color: #69ABD4; }
 #atlas #description #export {height: 100%;}
-#atlas #description #export #included {float:left;}
-#atlas #description #export #excluded {float:right;}
+#atlas #description #export #included {float:left;margin-left:20%;}
+#atlas #description #export #excluded {float:left;margin-left: 20%;}
 #atlas .spacer {clear:both;}
 
 #atlas #treaties { padding-left: 1em; font-weight: 400; font-size:12pt;padding-top: 10px;}
@@ -81,7 +81,11 @@ section.banner.angle-white { display:none !important;}
 /* ========================= */
 /*.accordion { list-style-type: none; padding: 0; margin: 0 0 30px; border: 1px solid #ccc; border-top: none; border-left: none; }*/
 #atlas .accordion { list-style-type: none; padding: 0px; margin: 5px; border-top: none; border-left: none; font-weight: 100; font-size: 14pt; background-color: #fff;}
-#atlas #treaties .accordion a { display:block; width:100%;}
+#atlas #treaties .accordion a { display:block; width:95%; border-bottom: 2px solid transparent;}
+#atlas #treaties .accordion a:hover { border-bottom:2px solid #E09600; }
+/*#atlas #treaties .accordion .section a { border-bottom: 2px solid #eee;}*/
+/*#atlas #treaties .accordion a:hover { color: #E09600; }*/
+/*#atlas #treaties .accordion a:hover { background-color: rgba(224,150,0,0.1); }*/
 #atlas .accordion ul { list-style:none; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;background-color: #fff;}
 /*.accordion li {  cursor: pointer; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;}*/
 /*.accordion li {  background-color:#eee; cursor: pointer; list-style-type: none; padding: 0; margin: 0; float: left; display: block; width: 100%;}*/
