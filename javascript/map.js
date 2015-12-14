@@ -37,6 +37,8 @@
     var region = "world";
     if (params["region"]) region = params["region"]
 
+    console.log("region = "+region);
+
     var options = {
       colorAxis: {colors: ['#69ABD4']},
       backgroundColor: { fill:'transparent', stroke:"#333" },

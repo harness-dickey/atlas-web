@@ -12,7 +12,6 @@ function create_sections(acc) {
 
       var ul = $(document.createElement("ul"));
       section.append(ul);
-      ul.attr("style","list-style-type:none;");
 
       $.each($treaties, function( index, element ) {
         if (is_elem_in_group(element, group.key)) {
@@ -25,19 +24,36 @@ function create_sections(acc) {
 
     });
 
-    // var region = $(document.createElement("li"));
-    //
-    // var region_link = $(document.createElement("a"));
-    // region.append(region_link);
-    // region.addClass("section");
-    // region_link.attr("id",""+group.key);
-    // // link.attr("id",element.key);
-    // region_link.html(group.name);
-    //
-    // var ul = $(document.createElement("ul"));
-    // section.append(ul);
-    // ul.attr("style","list-style-type:none;");
+    var region = $(document.createElement("li"));
+    acc.append(region);
 
+    var region_link = $(document.createElement("a"));
+    region.append(region_link);
+    region.addClass("section");
+    region_link.attr("id","regions");
+    // link.attr("id",element.key);
+    region_link.html("Regions");
+
+    var regions = [
+      {"name":"World", "code":"world"},
+      {"name":"Europe", "code":"150"},
+      {"name":"Americas", "code":"019"},
+      {"name":"Asia", "code":"142"},
+      {"name":"Africa", "code":"002"},
+      {"name":"Oceania", "code":"009"},
+    ]
+
+    var ul = $(document.createElement("ul"));
+    region.append(ul);
+
+    $.each(regions, function(index, elem) {
+      var li = $(document.createElement("li"));
+      ul.append(li);
+      var link = $(document.createElement("a"));
+      link.attr("href","?region="+elem["code"]+"#"+location.hash);
+      link.html(elem.name);
+      li.append(link);
+    });
 
 };
 
@@ -69,7 +85,6 @@ $(document).ready(function() {
 
   var acc = $(document.createElement("ul"));
   acc.addClass("accordion");
-  acc.attr("style", "list-style-type:none;");
   menu.append(acc);
 
   create_sections(acc);
