@@ -10,6 +10,8 @@
 
   function drawRegionsMap(name) {
 
+    var params={};window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(str,key,value){params[key] = value;});
+
     setTimeout(function() {
       window.scrollTo(0, 0);
     }, 1);
@@ -32,6 +34,9 @@
 
     var data = google.visualization.arrayToDataTable($treaties[key].countries);
 
+    var region = "world";
+    if (params["region"]) region = params["region"]
+
     var options = {
       colorAxis: {colors: ['#69ABD4']},
       backgroundColor: { fill:'transparent', stroke:"#333" },
@@ -40,6 +45,8 @@
        duration: 1000,
        easing: 'out',
      },
+     region: region,
+    //  magnifyingGlass: {enable: true, zoomFactor: 3},
       defaultColor: '#bdc3c7',
       legend:'none',
     };
@@ -49,6 +56,12 @@
     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 
     chart.draw(data, options);
+
+    google.visualization.events.addListener(chart, 'regionClick', regionHandler);
+
+    function regionHandler(e) {
+      alert('The user is navigating to page ' + e['region']);
+    }
 
     $(window).smartresize(function () {
       chart.draw(data, options);

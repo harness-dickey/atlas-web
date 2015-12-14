@@ -3,7 +3,6 @@ function create_sections(acc) {
     $.each($groups, function( index, group ) {
       var section = $(document.createElement("li"));
 
-      section.append(section_link);
       var section_link = $(document.createElement("a"));
       section.append(section_link);
       section.addClass("section");
@@ -15,8 +14,6 @@ function create_sections(acc) {
       section.append(ul);
       ul.attr("style","list-style-type:none;");
 
-      var has_links = new Boolean(false);
-
       $.each($treaties, function( index, element ) {
         if (is_elem_in_group(element, group.key)) {
           ul.append(add_links(element, group.key));
@@ -27,6 +24,21 @@ function create_sections(acc) {
       if ($(ul).find('a.active').length) section.addClass("current");
 
     });
+
+    // var region = $(document.createElement("li"));
+    //
+    // var region_link = $(document.createElement("a"));
+    // region.append(region_link);
+    // region.addClass("section");
+    // region_link.attr("id",""+group.key);
+    // // link.attr("id",element.key);
+    // region_link.html(group.name);
+    //
+    // var ul = $(document.createElement("ul"));
+    // section.append(ul);
+    // ul.attr("style","list-style-type:none;");
+
+
 };
 
 function add_links(element) {

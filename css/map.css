@@ -96,6 +96,9 @@ section.banner.angle-white { display:none !important;}
 .main #atlas #treaties ul.accordion, .wysiwyg #atlas #treaties ul.accordion {list-style-type: none;}
 .main #atlas #treaties ul.accordion li, .wysiwyg #atlas #treaties ul.accordion li {list-style-type: none;}
 
+/*media="all"*/
+#treaties .wysiwyg ol li:before, #treaties .wysiwyg ul li:before { display:none; }
+
 /* ========================= */
 /*    ACCORDION   */
 /* ========================= */
