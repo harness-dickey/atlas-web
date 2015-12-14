@@ -93,7 +93,7 @@ $(window).load(function() {
   $('#atlas ul.accordion').accordion();
 
   $("#atlas #description #export_button").click(function() {
-    $("#atlas #description #export").toggle();
+    $("#atlas #description #export").fadeToggle();
   });
 
   $(document).click(function() { $('#atlas #description #export').fadeOut(); });
