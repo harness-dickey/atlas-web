@@ -95,4 +95,8 @@ $(window).load(function() {
   $("#atlas #description #export_button").click(function() {
     $("#atlas #description #export").toggle();
   });
+
+  $(document).click(function() { $('#atlas #description #export').fadeOut(); });
+  $('#atlas #description').click(function(e) { e.stopPropagation(); return false; });
+
 });
