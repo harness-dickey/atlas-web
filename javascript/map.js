@@ -47,13 +47,9 @@
        duration: 1000,
        easing: 'out',
      },
-    //  displayMode: 'text',
      region: region,
-    //  magnifyingGlass: {enable: true, zoomFactor: 3},
       defaultColor: '#bdc3c7',
-      // datalessRegionColor: '#CCCCCC',
       datalessRegionColor: '#E09600',
-      // defaultColor: '#E09600',
       legend:'none',
     };
 
