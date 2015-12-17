@@ -12,7 +12,8 @@ article.main { padding: 0 !important;}
   margin: 0 auto;
   position: relative !important;
 }
-section.banner.angle-white { display:none !important;}
+/*section.banner.angle-white { display:none !important;}*/
+section.content-wrapper div.wrap article.main header h2 { display:none !important;}
 
 #atlas #treaties {
   /*border: 1px solid #ccc;*/
