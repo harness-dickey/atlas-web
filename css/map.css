@@ -53,7 +53,7 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
   max-height: 90%;
 }
 #atlas #description .title { font-weight: 400; color:#6699CC !important;}
-#atlas #description .body { font-weight: 100;}
+#atlas #description .body { font-weight: 100; font-size: 0.8em;}
 #atlas #description .disclaimer { font-weight: 100; font-size: 0.7em; color: #bbb; margin: 0.5em 0 0.5em 0;}
 #atlas #description .social { position: absolute; top: 7px;right:5px;  }
 #atlas #description .social div { display: inline-block; }
