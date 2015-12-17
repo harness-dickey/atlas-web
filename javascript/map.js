@@ -49,7 +49,8 @@
      },
      region: region,
       defaultColor: '#bdc3c7',
-      datalessRegionColor: '#E09600',
+      datalessRegionColor: '#bdc3c7',
+      // datalessRegionColor: '#E09600',
       legend:'none',
     };
 
