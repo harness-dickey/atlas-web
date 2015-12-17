@@ -53,6 +53,7 @@ section.banner.angle-white { display:none !important;}
 }
 #atlas #description .title { font-weight: 400; color:#6699CC !important;}
 #atlas #description .body { font-weight: 100;}
+#atlas #description .disclaimer { font-weight: 100; font-size: 0.7em; color: #ccc;}
 #atlas #description .social { position: absolute; top: 7px;right:5px;  }
 #atlas #description .social div { display: inline-block; }
 #atlas #description .social a { background-color: #509DCD; color: #fff; padding: 3px 7px 3px 7px; font-size: 12pt; font-variant: small-caps; }
