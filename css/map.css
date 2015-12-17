@@ -59,6 +59,7 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 #atlas #description .social div { display: inline-block; }
 #atlas #description .social a { background-color: #509DCD; color: #fff; padding: 3px 7px 3px 7px; font-size: 12pt; font-variant: small-caps; }
 #atlas #description .social a:hover { background-color: #69ABD4; }
+#atlas #description .social #share_button { display:none; }
 #atlas #description #export {height: 100%;}
 #atlas #description #export #included {float:left;margin-left:20%;}
 #atlas #description #export #excluded {float:left;margin-left: 20%;}
