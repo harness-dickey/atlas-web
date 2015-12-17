@@ -22,8 +22,8 @@
 
     var key = name
     if(!$treaties.hasOwnProperty(key)) {
-      key = "madrid_agreement";
-      location.hash="#madrid_agreement";
+      key = "paris_convention";
+      location.hash="#paris_convention";
     }
 
     console.log(key);
