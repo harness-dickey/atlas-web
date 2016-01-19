@@ -1,8 +1,7 @@
 var client = new Keen({
-  projectId: "55c6447596773d704c91e556", // String (required always)
-  writeKey: "20522e41d21796c46e5dc23896f72ccec3af1d330bc6e9613647fd14b8e7f437bfc182f976a732ba2a642d49c54ea748533746d95e66cdbedc32891f360ae3507aa4b3761fcef25b6acb6fabf1044fc6f349931a8b43a03b036d678f5a0ac5db1815848aae11f9408ed749d0d45414f0",   // String (required for sending data)
+  projectId: "569e84da46f9a72c3aba2792", // String (required always)
+  writeKey: "eabfddf1d87495f92e6fa537d8a26f29c49580e07759024fcd8c9f270c09de9fed1ef2d4112aa801bcd3b42470c24549d963dac21ded05b4a2b9931ca951450c8e20e64332ab0775e3b2ed5266014caaf0e4ab5e1870b33c474be5e628af27c8",   // String (required for sending data)
 });
-
 
 $(function() {
   client.addEvent("page-load", {
