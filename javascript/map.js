@@ -32,7 +32,9 @@
 
     activate_link(key);
 
-    var data = google.visualization.arrayToDataTable($treaties[key].countries);
+    // var data = google.visualization.arrayToDataTable($treaties[key].countries);
+
+    var data = load_data($treaties[key]);
 
     var region = "world";
     if (params["region"]) region = params["region"]
@@ -40,7 +42,7 @@
     console.log("region = "+region);
 
     var options = {
-      colorAxis: {colors: ['#E09600','#69ABD4']},
+      colorAxis: {colors: ['#F4AD22','#69ABD4']},
       backgroundColor: { fill:'transparent', stroke:"#333" },
       animation: {"startup": true},
       animation:{
@@ -70,6 +72,32 @@
     $(window).smartresize(function () {
       chart.draw(data, options);
     });
+
+  }
+
+  function load_data(treaty) {
+    countries = treaty.countries
+    console.log("<><><><> countries: "+countries);
+    var data = new google.visualization.DataTable();
+      data.addColumn('string',  'Country');
+      data.addColumn('number', 'Included');
+      data.addColumn({type:'string',role:'tooltip'});
+    //  data.addRows( countries );
+
+    $.each(countries, function(index, key, value) {
+      console.log("VALU: "+key);
+      data.addRow([key[0], key[1], format_tooltip(key[1], key[2])]);
+    });
+
+    return data;
+  }
+
+  function format_tooltip(inc, mark) {
+    var tip = "Included: "+inc.f;
+    if (mark) {
+      tip += "\nMark: "+mark;
+    }
+    return tip;
 
   }
 
