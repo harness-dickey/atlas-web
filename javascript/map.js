@@ -28,7 +28,7 @@
 
     console.log(key);
     key = key.replace("#","")
-    console.log($treaties[key].countries.length);
+    // console.log($treaties[key].countries.length);
 
     activate_link(key);
 
@@ -76,8 +76,8 @@
   }
 
   function load_data(treaty) {
-    countries = treaty.countries
-    console.log("<><><><> countries: "+countries);
+    // countries = treaty.countries
+    // console.log("<><><><> countries: "+countries);
     var data = new google.visualization.DataTable();
       data.addColumn('string',  'Country');
       data.addColumn('number', 'Included');
