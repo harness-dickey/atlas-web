@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(45deg, rgba(102,153,204,0.3) 0%,rgba(0,0,0,.1) 33%, rgba(0,0,0,.1) 66%,rgba(102,153,204,0.3) 100%) !important;
+    background-size: 100% auto, cover
 }
 div.wrap,
 article.main,
