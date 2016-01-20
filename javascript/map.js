@@ -84,16 +84,24 @@
       data.addColumn({type:'string',role:'tooltip'});
     //  data.addRows( countries );
 
-    $.each(countries, function(index, key, value) {
-      console.log("VALU: "+key);
-      data.addRow([key[0], key[1], format_tooltip(key[1], key[2])]);
+    $.each(treaty.included, function(index, key) {
+      data.addRow([$countries[key].name, 1, format_tooltip("Yes", $countries[key].marking)]);
     });
+
+    $.each(treaty.excluded, function(index, key) {
+      data.addRow([$countries[key].name, 0, format_tooltip("No", $countries[key].marking)]);
+    });
+
+    // $.each(countries, function(index, key, value) {
+    //   console.log("VALU: "+key);
+    //   data.addRow([key[0], key[1], format_tooltip(key[1], key[2])]);
+    // });
 
     return data;
   }
 
   function format_tooltip(inc, mark) {
-    var tip = "Included: "+inc.f;
+    var tip = "Included: "+inc;
     if (mark) {
       tip += "\nMark: "+mark;
     }
