@@ -149,7 +149,7 @@
       data.append($countries[key].name+", ");
     });
     data.select();
-    $('#atlas #atlas-modal').modal({overlayClose:true});
+    $('#atlas-modal').modal({overlayClose:true});
   }
 
   function createCountryListItem(name) {
