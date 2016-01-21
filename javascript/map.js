@@ -140,7 +140,6 @@
   }
 
   function treaty_modal(treaties, name) {
-    var modal = $('#atlas #atlas-modal');
     var data = $('#atlas #atlas-modal #data');
     $('#atlas #atlas-modal .title').html("Copy "+name);
     data.empty();
