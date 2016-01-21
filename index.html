@@ -11,7 +11,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="javascript/jquery.accordion.js" type="text/javascript"></script>
+    <script src="javascript/jquery.simplemodal.js" type="text/javascript"></script>
     <script src="https://d26b395fwzu5fz.cloudfront.net/3.2.6/keen.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <script src="javascript/smartsize.js" type="text/javascript"></script>
     <script src="javascript/data.js" type="text/javascript" charset="utf-8"></script>
@@ -44,11 +46,18 @@
          <div class="disclaimer">This data is for convenient reference only and is believed to be accurate as of December 2015.
 You should independently verify all information before acting or failing to act on it.</div>
          <div id="export" style="display:none;">
-           <div id="included" class=""><h3>Included</h3><ul></ul></div>
-           <div id="excluded" class=""><h3>Excluded</h3><ul></ul></div>
+           <div id="included" class=""><h3>Included <a href="" class="atlas-clipboard"><i class="fa fa-clipboard"></i></a></h3><ul></ul></div>
+           <div id="excluded" class=""><h3>Excluded <a href="" class="atlas-clipboard"><i class="fa fa-clipboard"></i></a></h3><ul></ul></div>
            <div id="spacer">&nbsp;</div>
        </div>
      </div>
+
+     <div id="atlas-modal">
+       <h2 class="title"></h2>
+       <textarea name="data" id="data" rows="10" cols="40" readonly="readonly"></textarea>
+     </div>
+
+   </div>
 
   </body>
 </html>

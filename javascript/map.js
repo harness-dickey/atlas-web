@@ -117,21 +117,50 @@
     var ex_ul = $('#atlas #description #export #excluded ul');
     // $('#atlas #description #export #included').append(inc_ul);
     // $('#atlas #description #export #excluded').append(ex_ul);
+
+    $('#atlas #description #export #included .atlas-clipboard').click(function(){
+      var modal = $('#atlas #atlas-modal');
+      var data = $('#atlas #atlas-modal #data');
+      $('#atlas #atlas-modal .title').html("Copy Included");
+      data.empty();
+
+      $.each(treaty.included, function(index, key) {
+        data.append($countries[key].name+", ");
+      });
+      data.select();
+      $('#atlas #atlas-modal').modal({overlayClose:true});
+    });
+
+    $('#atlas #description #export #excluded .atlas-clipboard').click(function(){
+      var modal = $('#atlas #atlas-modal');
+      var data = $('#atlas #atlas-modal #data');
+      $('#atlas #atlas-modal .title').html("Copy Excluded");
+      data.empty();
+
+      $.each(treaty.included, function(index, key) {
+        data.append($countries[key].name+", ");
+      });
+      data.select();
+      $('#atlas #atlas-modal').modal({overlayClose:true});
+    });
+
     inc_ul.empty();
     ex_ul.empty();
 
     $.each(treaty.included, function(index, key) {
-      var li = $(document.createElement("li"));
-      inc_ul.append(li);
-      li.html($countries[key].name);
+      inc_ul.append(createCountryListItem($countries[key].name));
     });
 
     $.each(treaty.excluded, function(index, key) {
-      var li = $(document.createElement("li"));
-      ex_ul.append(li);
-      li.html($countries[key].name);
+      ex_ul.append(createCountryListItem($countries[key].name));
     });
 
+  }
+
+  function createCountryListItem(name) {
+    var li = $(document.createElement("li"));
+    li.html(name);
+    return li;
   }
 
   function activate_link(key) {

@@ -67,6 +67,10 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 #atlas #description #export #excluded {float:right;margin-right: 1em;}
 #atlas .spacer {clear:both;}
 
+#atlas-modal {display:none;width: 300px;height:250px;background-color:#fff;border:1px solid #eee;opacity:0.9; border-radius: 4px; padding: 0 1em 0 1em;}
+#atlas-modal #data { width: 100%;  opacity: 1; margin: 0 auto;}
+.simplemodal-overlay {background-color: #000;}
+
 #atlas #treaties { padding-left: 1em; font-weight: 400; font-size:12pt;padding-top: 10px;}
 #atlas #treaties .treaty_nav { padding-bottom: 10px;}
 
