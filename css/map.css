@@ -53,6 +53,7 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
   overflow-x:auto;
   overflow-y:scroll;
   max-height: 90%;
+  margin-top: -20px;
 }
 #atlas #description .title { font-weight: 400; color:#6699CC !important;}
 #atlas #description .body { font-weight: 100; font-size: 0.8em;}
@@ -106,3 +107,13 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 
 /* Level 2 */
 #atlas .accordion li ul li { list-style: none; list-style-type: none; font-size: 0.9em; }
+
+/* ========================= */
+/*    Mobile Layout   */
+/* ========================= */
+@media only screen and (max-width: 767px) {
+    /* phones */
+    #atlas {font-size: 5pt;}
+    #atlas #description .body { display:none;}
+    #atlas .accordian ul li, #atlas #treaties { font-size:7pt;  }
+}
