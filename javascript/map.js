@@ -42,7 +42,7 @@
     console.log("region = "+region);
 
     var options = {
-      colorAxis: {colors: ['#69ABD4', '#bdc3c7']},
+      colorAxis: {colors: [ '#bdc3c7', '#69ABD4']},
       // colorAxis: {colors: ['#69ABD4','#F4AD22']},
       backgroundColor: { fill:'transparent', stroke:"#333" },
       animation: {"startup": true},
