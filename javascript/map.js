@@ -86,11 +86,11 @@
     //  data.addRows( countries );
 
     $.each(treaty.included, function(index, key) {
-      data.addRow([$countries[key].name, 1, format_tooltip("Yes", $countries[key].marking)]);
+      data.addRow([$countries[key].name, 1, format_tooltip("Yes", $countries[key].marking, treaty)]);
     });
 
     $.each(treaty.excluded, function(index, key) {
-      data.addRow([$countries[key].name, 0, format_tooltip("No", $countries[key].marking)]);
+      data.addRow([$countries[key].name, 0, format_tooltip("No", $countries[key].marking, treaty)]);
     });
 
     // $.each(countries, function(index, key, value) {
@@ -101,13 +101,17 @@
     return data;
   }
 
-  function format_tooltip(inc, mark) {
+  function format_tooltip(inc, mark, treaty) {
     var tip = "Included: "+inc;
-    if (mark) {
+    if (mark && isTrademark(treaty)) {
       tip += "\nMark: "+mark;
     }
     return tip;
 
+  }
+
+  function isTrademark(treaty) {
+    return $.inArray("trademarks", treaty.groups) >= 0;
   }
 
   function generate_description(treaty) {
