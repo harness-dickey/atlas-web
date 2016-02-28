@@ -126,9 +126,9 @@ Atlas.Map = function () {
 
     var params={};window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(str,key,value){params[key] = value;});
 
-    setTimeout(function() {
-      window.scrollTo(0, 0);
-    }, 1);
+    // setTimeout(function() {
+    //   window.scrollTo(0, 0);
+    // }, 1);
 
     if (name) {
       name = name.replace("#","");
