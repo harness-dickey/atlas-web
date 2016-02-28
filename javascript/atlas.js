@@ -284,7 +284,7 @@ Atlas.Map = function () {
   this.activate_link = function (key) {
     console.log("activate link: "+key);
     $("#atlas #treaties a").removeClass('active');
-    $("#atlas a#"+key).addClass('active');
+    $("#atlas a#"+key+"_ID").addClass('active');
     $('#atlas a#'+ $treaties[key].groups[0]).trigger('activate-node');
   };
 
