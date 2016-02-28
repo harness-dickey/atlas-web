@@ -93,7 +93,7 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 #atlas a.active, #atlas #treaties a.active { color:#69ABD4 !important; text-decoration: none; font-weight: bold; border:none; border-left:none;border-right:none;border-top:none;}
 #atlas a:focus {outline:0;}
 
-#atlas #treaties #minimize_treaties_button { position: absolute; top:20px; right:5px;}
+#atlas #treaties #minimize_treaties_button { position: absolute; top:20px; right:5px;z-index: 1000;}
 
 .main #atlas #treaties ul.accordion, .wysiwyg #atlas #treaties ul.accordion, #atlas #description #export ul {list-style-type: none;}
 .main #atlas #treaties ul.accordion li, .wysiwyg #atlas #treaties ul.accordion li {list-style-type: none;}
