@@ -79,8 +79,9 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 #atlas #description_launcher,
 #atlas #treaties_launcher
  {
-   float:left;
+  float:left;
   padding: 10px;
+  z-index:1000;
 }
 
 #atlas-modal {display:none;width: 300px;height:250px;background-color:#fff;border:1px solid #eee;opacity:0.9; border-radius: 4px; padding: 0 1em 0 1em;}
