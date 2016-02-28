@@ -270,8 +270,9 @@ Atlas.Map = function () {
     });
     data.select();
 
-    $('#atlas-modal').modal({overlayClose:true});
-
+    (function($) {
+      $('#atlas-modal').modal({overlayClose:true});
+    }(_$));
   };
 
   this.createCountryListItem = function (name) {
