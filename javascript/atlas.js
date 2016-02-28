@@ -112,6 +112,7 @@ Atlas.Menu.prototype.display = function() {
   });
 
   $("#atlas #description #minimize_description_button").click(function() {
+    $("#atlas #description #export").fadeOut();
     $("#atlas #description").fadeOut();
     $("#atlas #description_launcher").fadeIn();
   });
