@@ -79,6 +79,7 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 #atlas #description_launcher,
 #atlas #treaties_launcher
  {
+   float:left;
   padding: 10px;
 }
 
