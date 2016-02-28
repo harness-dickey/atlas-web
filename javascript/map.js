@@ -153,8 +153,10 @@
       data.append($countries[key].name+", ");
     });
     data.select();
-    // $('#atlas-modal').modal({overlayClose:true});
-    $.modal($('#atlas-modal'),{overlayClose:true});
+    $('#atlas-modal').modal({overlayClose:true});
+    // setTimeout(function() {
+    // $.modal($('#atlas-modal'),{overlayClose:true});
+    // }, 1);
   }
 
   function createCountryListItem(name) {
