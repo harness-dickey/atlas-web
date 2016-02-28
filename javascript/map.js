@@ -1,3 +1,4 @@
+    // var jq214 = jQuery.noConflict();
   // google.setOnLoadCallback(drawRegionsMap(location.hash));
   google.setOnLoadCallback(function() {
     // if (location.hash) {
@@ -152,14 +153,11 @@
       data.append($countries[key].name+", ");
     });
     data.select();
-    if (typeof jQuery != 'undefined') {
-    // jQuery is loaded => print the version
-    alert(jQuery.fn.jquery);
-}
-    $('#atlas-modal').modal({overlayClose:true});
-    // setTimeout(function() {
-    // $.modal($('#atlas-modal'),{overlayClose:true});
-    // }, 1);
+
+    (function($) {
+      //FIXME: terrible hack for loading older version of jquery outside my power
+      $('#atlas-modal').modal({overlayClose:true});
+    }(_$));
   }
 
   function createCountryListItem(name) {
