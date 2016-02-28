@@ -111,6 +111,17 @@ Atlas.Menu.prototype.display = function() {
     $("#atlas #description #export").fadeToggle();
   });
 
+  $("#atlas #description #minimize_description_button").click(function() {
+    $("#atlas #description").fadeOut();
+    $("#atlas #description_launcher").fadeIn();
+  });
+
+  $("#atlas #description_launcher #maximize_description_button").click(function() {
+    $("#atlas #description").fadeIn();
+    $("#atlas #description_launcher").fadeOut();
+  });
+
+
   $(document).click(function() { $('#atlas #description #export').fadeOut(); });
   $('#atlas #description').click(function(e) { e.stopPropagation(); return false; });
 
