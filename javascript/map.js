@@ -1,6 +1,10 @@
-    _$ = jQuery.noConflict();
+    var _$ = jQuery.noConflict();
     // var jq214 = jQuery.noConflict();
   // google.setOnLoadCallback(drawRegionsMap(location.hash));
+
+  (function($) {
+    //FIXME: terrible hack for loading older version of jquery outside my power
+
   google.setOnLoadCallback(function() {
     // if (location.hash) {
       drawRegionsMap(location.hash);
@@ -155,10 +159,9 @@
     });
     data.select();
 
-    (function($) {
-      //FIXME: terrible hack for loading older version of jquery outside my power
+
       $('#atlas-modal').modal({overlayClose:true});
-    }(_$));
+
   }
 
   function createCountryListItem(name) {
@@ -173,3 +176,5 @@
     $("#atlas a#"+key).addClass('active');
     $('#atlas a#'+ $treaties[key].groups[0]).trigger('activate-node');
   }
+
+}(_$)); //XXX: END OF FORCED JQUERY VERSION
