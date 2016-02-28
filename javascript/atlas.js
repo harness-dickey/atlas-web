@@ -3,7 +3,7 @@ var Atlas = Atlas || {};
 //##########################################################################
 // Atlas Menu
 
-Atlas.Menu = function (subdomain, token) {
+Atlas.Menu = function () {
 
   this.create_sections = function(acc) {
       var that = this;

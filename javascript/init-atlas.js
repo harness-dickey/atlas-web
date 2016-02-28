@@ -11,8 +11,8 @@ var menu;
 var map;
 $(document).ready(function() {
 
-  menu = new Atlas.Menu("#atlas #treaties");
-  menu.setup("#atlas #treaties");
+  menu = new Atlas.Menu();
+  menu.setup();
 
   map = new Atlas.Map();
 
