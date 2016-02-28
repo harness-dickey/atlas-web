@@ -97,7 +97,7 @@ Atlas.Menu.prototype.add_links = function (element) {
   li.append(link);
   // li.append(div);
   link.attr("href","#"+element.key);
-  link.attr("id",element.key);
+  link.attr("id",element.key+"_ID");
   link.html(element.name);
   return li;
 };
