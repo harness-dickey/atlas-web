@@ -64,7 +64,7 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 #atlas #description .social a,
 #atlas #treaties_launcher a,
 #atlas #treaties #minimize_treaties_button,
-#atlas #description_launcher a { border:1px solid #509DCD; color: #509DCD; padding: 3px 7px 3px 7px; font-size: 12pt; font-variant: small-caps; }
+#atlas #description_launcher a { border:1px solid #509DCD; color: #509DCD; padding: 2px 7px 2px 7px; font-size: 12pt; font-variant: small-caps; }
 #atlas #description .social a:hover,
 #atlas #treaties_launcher a:hover,
 #atlas #treaties #minimize_treaties_button:hover,
