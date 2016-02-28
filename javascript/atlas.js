@@ -111,6 +111,15 @@ Atlas.Menu.prototype.display = function() {
     $("#atlas #description #export").fadeToggle();
   });
 
+  $("#atlas #treaties #minimize_treaties_button").click(function() {
+    $("#atlas #treaties").fadeOut();
+    $("#atlas #treaties_launcher").fadeIn();
+  });
+  $("#atlas #treaties_launcher #maximize_treaties_button").click(function() {
+    $("#atlas #treaties").fadeIn();
+    $("#atlas #treaties_launcher").fadeOut();
+  });
+
   $("#atlas #description #minimize_description_button").click(function() {
     $("#atlas #description #export").fadeOut();
     $("#atlas #description").fadeOut();
