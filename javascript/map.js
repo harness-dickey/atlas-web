@@ -1,3 +1,4 @@
+    _$ = jQuery.noConflict();
     // var jq214 = jQuery.noConflict();
   // google.setOnLoadCallback(drawRegionsMap(location.hash));
   google.setOnLoadCallback(function() {
