@@ -124,7 +124,7 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
 
 /* Level 2 */
 #atlas .accordion li ul li { list-style: none; list-style-type: none; font-size: 0.9em; }
-
+#atlas #regions_div {width: 900px; height: 500px;}
 /* ========================= */
 /*    Mobile Layout   */
 /* ========================= */
@@ -133,4 +133,5 @@ section.content-wrapper div.wrap article.main header h2 { display:none !importan
     #atlas {font-size: 5pt;}
     #atlas #description .body { display:none;}
     #atlas .accordian ul li, #atlas #treaties { font-size:7pt;  }
+    #atlas #regions_div {width: 400px; height: 200px;}
 }
