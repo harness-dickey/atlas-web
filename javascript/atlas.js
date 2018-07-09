@@ -1,4 +1,4 @@
-var Atlas = Atlas || {};
+ var Atlas = Atlas || {};
 
 //##########################################################################
 // Atlas Menu
@@ -222,6 +222,7 @@ Atlas.Map = function () {
     //  data.addRows( countries );
 
     $.each(treaty.included, function(index, key) {
+		console.log("load_data: "+treaty+", key:"+key+", country: "+$countries[key].name);
       data.addRow([$countries[key].name, 1, that.format_tooltip("Yes", $countries[key].marking, treaty)]);
     });
 
